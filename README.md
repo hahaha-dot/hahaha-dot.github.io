@@ -62,7 +62,7 @@ const socialLinks = {
 python3 -m http.server 3000
 ```
 
-然后打开 `http://localhost:3000/`。
+然后打开 `[http://localhost:3000/](https://hahaha-dot.github.io/)`。
 
 ## 更新公开网站
 
