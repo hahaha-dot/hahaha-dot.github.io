@@ -1,0 +1,275 @@
+:root {
+  --text: #171717;
+  --muted: #777777;
+  --line: #e8e8e8;
+  --link: #0877c9;
+  --page: #ffffff;
+  --serif: Georgia, "Times New Roman", Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--page);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--line);
+  border-top: 2px solid #f6e4e7;
+}
+
+.nav-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1160px;
+  min-height: 78px;
+  padding: 0 32px;
+}
+
+.site-name {
+  color: var(--text);
+  font-size: 1.28rem;
+  font-weight: 700;
+}
+
+.site-name:hover {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: clamp(20px, 3vw, 42px);
+}
+
+nav a {
+  color: var(--text);
+  font-size: 1rem;
+  position: relative;
+}
+
+nav a::after {
+  background: var(--link);
+  bottom: -10px;
+  content: "";
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY(3px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+nav a:hover {
+  color: var(--link);
+  text-decoration: none;
+}
+
+nav a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main,
+footer {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.intro {
+  min-height: 430px;
+  padding: 112px 0 86px;
+}
+
+.intro h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  margin: 0 0 22px;
+}
+
+.role {
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.intro-meta {
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+}
+
+.intro-meta a {
+  color: var(--muted);
+}
+
+.content-section {
+  border-top: 1px solid var(--line);
+  padding: 56px 0 64px;
+  scroll-margin-top: 30px;
+}
+
+.content-section h2 {
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin: 0 0 38px;
+}
+
+.entry-list {
+  display: grid;
+  gap: 42px;
+}
+
+.entry-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 150px minmax(0, 1fr);
+}
+
+.entry-date {
+  color: var(--muted);
+  margin: 0;
+}
+
+article {
+  max-width: 830px;
+}
+
+article h3 {
+  font-size: 1.15rem;
+  line-height: 1.45;
+  margin: 0 0 9px;
+}
+
+article h3 span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+article p,
+.contact p {
+  margin: 0;
+}
+
+.contact p {
+  font-size: 1.05rem;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding-bottom: 42px;
+  padding-top: 24px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 17px;
+  }
+
+  .nav-wrap {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 18px;
+    padding-top: 16px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding-bottom: 4px;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    font-size: 0.92rem;
+    white-space: nowrap;
+  }
+
+  main,
+  footer,
+  .nav-wrap {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .intro {
+    min-height: 350px;
+    padding: 74px 0 62px;
+  }
+
+  .intro-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .intro-meta span[aria-hidden="true"] {
+    display: none;
+  }
+
+  .content-section {
+    padding: 44px 0 50px;
+  }
+
+  .content-section h2 {
+    margin-bottom: 28px;
+  }
+
+  .entry-grid {
+    gap: 6px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  nav a::after {
+    transition: none;
+  }
+}
