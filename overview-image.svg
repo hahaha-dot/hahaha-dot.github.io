@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 680" role="img" aria-labelledby="title desc">
+  <title id="title">Jane Guo profile graphic</title>
+  <desc id="desc">A black, white, and blue abstract profile graphic.</desc>
+  <rect width="560" height="680" fill="#f7f7f7"/>
+  <path d="M0 78h560M0 602h560M78 0v680M482 0v680" stroke="#e2e2e2"/>
+  <circle cx="280" cy="257" r="118" fill="#171717"/>
+  <circle cx="280" cy="246" r="72" fill="#ffffff"/>
+  <path d="M147 532c18-101 73-151 133-151s115 50 133 151" fill="#2166d1"/>
+  <circle cx="430" cy="113" r="13" fill="#2166d1"/>
+  <path d="M104 111h96M104 129h62M362 550h94M386 568h70" stroke="#171717" stroke-width="4"/>
+  <text x="105" y="624" fill="#171717" font-family="Georgia, serif" font-size="24">Jane Guo</text>
+  <text x="105" y="651" fill="#747474" font-family="Georgia, serif" font-size="15">HKUST (Guangzhou)</text>
+</svg>

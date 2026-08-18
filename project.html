@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project · Jane Guo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="site-name" href="index.html#about">Jane Guo</a>
+        <nav aria-label="Primary navigation">
+          <a class="active" href="index.html#about">About</a>
+          <a href="index.html#news">News</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="detail-main">
+      <a class="back-link" href="index.html#about">← Back to About</a>
+      <section class="page-intro">
+        <p class="section-label">About / Project</p>
+        <h1>Project</h1>
+        <p>Selected data and machine-learning projects.</p>
+      </section>
+      <section class="detail-grid" aria-label="Project details">
+        <article class="detail-card">
+          <p class="date">2026 · Tianchi Competition</p>
+          <h2>Fund Flow Forecasting</h2>
+          <h3>Forecasting baseline</h3>
+          <p>
+            Built an end-to-end forecasting baseline from five raw CSV files
+            to 30-day purchase and redemption forecasts.
+          </p>
+          <ul>
+            <li>Organized four business tables in SQLite and assembled data with SQL joins.</li>
+            <li>Created calendar, holiday-position, and weekday-pattern features.</li>
+            <li>Used rolling monthly validation and forward feature selection.</li>
+          </ul>
+        </article>
+        <article class="detail-card">
+          <p class="date">2026 · Machine Learning</p>
+          <h2>Air Quality Classification</h2>
+          <h3>Clustering Analysis Lead</h3>
+          <p>
+            Compared K-Means, hierarchical clustering, and Gaussian mixture
+            models on 9,358 hourly sensor records.
+          </p>
+          <ul>
+            <li>Evaluated clustering with Silhouette, Davies–Bouldin, ARI, and NMI.</li>
+            <li>Used a cluster-disjoint split to reduce leakage between similar samples.</li>
+            <li>The team achieved a Macro-F1 score of 0.8328.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <footer><p>© 2026 Jane Guo</p></footer>
+  </body>
+</html>

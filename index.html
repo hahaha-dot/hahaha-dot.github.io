@@ -3,118 +3,153 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Jane Guo is a Big Data undergraduate at HKUST(GZ), interested in data science, machine learning, and graph algorithms."
-    />
+    <meta name="description" content="Jane Guo's personal academic website." />
     <meta name="theme-color" content="#ffffff" />
     <title>Jane Guo</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="social-links.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="nav-wrap">
-        <a class="site-name" href="#top">Jane Guo</a>
+        <a class="site-name" href="index.html#about">Jane Guo</a>
         <nav aria-label="Primary navigation">
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#leadership">Leadership</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+          <a class="active" href="index.html#about">About</a>
+          <a href="index.html#news">News</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main id="top">
-      <section class="intro" aria-labelledby="page-title">
-        <h1 id="page-title">Jane Guo</h1>
-        <p class="role">Undergraduate Student in Big Data</p>
-        <p class="intro-meta">
+    <main>
+      <section class="overview section" id="about">
+        <div class="overview-copy">
+          <p class="section-label">About / Overview</p>
+          <h1>Jane Guo</h1>
+          <p class="role">Undergraduate Student in Big Data</p>
+          <p class="meta">HKUST (Guangzhou) · Guangzhou, China</p>
+          <p class="introduction">
+            I am a Big Data undergraduate at HKUST (Guangzhou). My current
+            work includes data science, machine learning, and research on LLMs
+            and graph algorithms.
+          </p>
+          <a class="text-link" href="mailto:jguo253@connect.hkust-gz.edu.cn">
+            jguo253@connect.hkust-gz.edu.cn
+          </a>
+        </div>
+        <figure class="overview-figure">
+          <img src="overview-image.svg" alt="Abstract profile graphic for Jane Guo" />
+        </figure>
+      </section>
+
+      <section class="section about-blocks" aria-labelledby="about-sections-title">
+        <div class="section-heading">
+          <h2 id="about-sections-title">About</h2>
+          <p>Select a section to view its detail page.</p>
+        </div>
+        <div class="card-grid">
+          <a class="section-card" href="project.html">
+            <span class="card-number">01</span>
+            <h3>Project</h3>
+            <p>Tianchi forecasting and air-quality classification projects.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="section-card" href="research.html">
+            <span class="card-number">02</span>
+            <h3>Research</h3>
+            <p>Current research on LLMs and graph algorithms.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="section-card" href="honor.html">
+            <span class="card-number">03</span>
+            <h3>Honor</h3>
+            <p>Awards and honors, including the 2025 iGEM Gold Medal.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="section-card" href="education.html">
+            <span class="card-number">04</span>
+            <h3>Education</h3>
+            <p>University, high-school, and middle-school education.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="section-card" href="skill.html">
+            <span class="card-number">05</span>
+            <h3>Skill</h3>
+            <p>Programming, data analysis, research, and technical tools.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="section-card" href="extracurricular.html">
+            <span class="card-number">06</span>
+            <h3>Extracurricular Activity</h3>
+            <p>Human Practices Lead experience with the HKUST(GZ) iGEM team.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="news" aria-labelledby="news-title">
+        <div class="section-heading">
+          <h2 id="news-title">News</h2>
+          <p>Experiences organized by time.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>2026–Present</time>
+            <p>Conducting research on LLMs and graph algorithms.</p>
+          </article>
+          <article class="timeline-item">
+            <time>2026</time>
+            <p>Built a fund-flow forecasting baseline for the Tianchi Competition.</p>
+          </article>
+          <article class="timeline-item">
+            <time>2026</time>
+            <p>Led clustering analysis for an air-quality classification project.</p>
+          </article>
+          <article class="timeline-item">
+            <time>2025</time>
+            <p>The HKUST(GZ) iGEM team received a Gold Medal.</p>
+          </article>
+          <article class="timeline-item">
+            <time>2024</time>
+            <p>Began the BSc in Big Data at HKUST (Guangzhou).</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div class="social-list" aria-label="Contact and social accounts">
+          <a class="social-link" href="mailto:jguo253@connect.hkust-gz.edu.cn" aria-label="Email" title="Email">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect x="5" y="10" width="38" height="28" rx="5" />
+              <path d="M8 14l16 13 16-13" />
+            </svg>
+          </a>
+          <a class="social-link xhs" data-social="xiaohongshu" aria-label="Xiaohongshu" title="Xiaohongshu">
+            <span aria-hidden="true">小红书</span>
+          </a>
+          <a class="social-link" data-social="instagram" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect x="7" y="7" width="34" height="34" rx="10" />
+              <circle cx="24" cy="24" r="8" />
+              <circle class="fill-dot" cx="35" cy="13" r="2.5" />
+            </svg>
+          </a>
+          <a class="social-link linkedin" data-social="linkedin" aria-label="LinkedIn" title="LinkedIn">
+            <span aria-hidden="true">in</span>
+          </a>
+          <a class="social-link" data-social="github" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path class="fill-shape" d="M24 5a19 19 0 00-6 37c1 .2 1.4-.4 1.4-1v-4c-5.7 1.2-6.9-2.4-6.9-2.4-.9-2.4-2.3-3-2.3-3-1.9-1.3.1-1.3.1-1.3 2.1.1 3.2 2.2 3.2 2.2 1.9 3.2 5 2.3 6.2 1.8.2-1.4.7-2.3 1.4-2.8-4.5-.5-9.3-2.3-9.3-10.2 0-2.3.8-4.1 2.2-5.6-.2-.5-1-2.7.2-5.5 0 0 1.8-.6 5.8 2.1a20 20 0 0110.6 0c4-2.7 5.8-2.1 5.8-2.1 1.2 2.8.4 5 .2 5.5 1.4 1.5 2.2 3.3 2.2 5.6 0 8-4.8 9.7-9.3 10.2.8.7 1.5 2 1.5 4v5.9c0 .6.4 1.2 1.4 1A19 19 0 0024 5z" />
+            </svg>
+          </a>
+        </div>
+        <p class="contact-email">
           <a href="mailto:jguo253@connect.hkust-gz.edu.cn">jguo253@connect.hkust-gz.edu.cn</a>
-          <span aria-hidden="true">·</span>
-          <span>HKUST (Guangzhou)</span>
-        </p>
-      </section>
-
-      <section class="content-section" id="research">
-        <h2>Research</h2>
-        <div class="entry-grid">
-          <p class="entry-date">2026–Present</p>
-          <article>
-            <h3>LLMs and Graph Algorithms</h3>
-            <p>
-              Current research project on graph search, subgraph retrieval,
-              path reasoning, graph optimization, and evidence verification.
-              I am reviewing and comparing existing benchmarks and methods;
-              this work is still in progress.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" id="projects">
-        <h2>Projects</h2>
-        <div class="entry-list">
-          <div class="entry-grid">
-            <p class="entry-date">2026</p>
-            <article>
-              <h3>Fund Flow Forecasting <span>· Tianchi Competition</span></h3>
-              <p>
-                Built a forecasting baseline from five raw CSV files. I
-                organized four business tables in SQLite, created calendar and
-                holiday features, used rolling monthly validation, and produced
-                30-day purchase and redemption forecasts.
-              </p>
-            </article>
-          </div>
-
-          <div class="entry-grid">
-            <p class="entry-date">2026</p>
-            <article>
-              <h3>Air Quality Classification <span>· Clustering Analysis Lead</span></h3>
-              <p>
-                Compared K-Means, hierarchical clustering, and Gaussian mixture
-                models on 9,358 hourly sensor records. The team used a
-                cluster-disjoint split and achieved a Macro-F1 score of 0.8328.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section" id="leadership">
-        <h2>Leadership</h2>
-        <div class="entry-grid">
-          <p class="entry-date">2024–2025</p>
-          <article>
-            <h3>Human Practices Lead <span>· HKUST(GZ) iGEM Team</span></h3>
-            <p>
-              Coordinated about ten collaborators and approximately 26 Human
-              Practices tasks across planning, outreach, education, event
-              delivery, and cross-team communication. Our team received a Gold
-              Medal at the 2025 iGEM Competition.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" id="education">
-        <h2>Education</h2>
-        <div class="entry-grid">
-          <p class="entry-date">2024–2028</p>
-          <article>
-            <h3>The Hong Kong University of Science and Technology (Guangzhou)</h3>
-            <p>BSc in Big Data · Expected 2028 · GPA approximately 3.9 / 4.3</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section contact" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Email me at
-          <a href="mailto:jguo253@connect.hkust-gz.edu.cn">jguo253@connect.hkust-gz.edu.cn</a>.
         </p>
       </section>
     </main>
